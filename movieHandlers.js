@@ -32,8 +32,7 @@ const getMovieById = (req, res) => {
 };
 
 const postMovie = (req, res) => {
-  res.send("Post route il working");
-};
+
   const { title, director, year, color, duration } = req.body;
 
   database
@@ -48,7 +47,7 @@ const postMovie = (req, res) => {
       console.error(err);
       res.status(500).send("Error saving the movie");
     });
-
+  }
 
 module.exports = {
   getMovies,

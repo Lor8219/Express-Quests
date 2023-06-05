@@ -31,6 +31,8 @@ const getUsersById = (req, res) => {
 };
 
 const postUser = (req, res) => {
+  console.log('ok')
+  console.log(req.body);
   const { firstname, lastname, email, city, language } = req.body;
   database
     .query(

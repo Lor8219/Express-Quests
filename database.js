@@ -18,13 +18,13 @@ database
     console.error(err);
   });
 
-  database
-  .query("select * from movies")
-  .then(([movies]) => {
-    console.log(movies);
-  })
-  .catch((err) => {
-    console.error(err);
-  });
+  // database
+  // .query("select * from movies")
+  // .then(([movies]) => {
+  //   console.log(movies);
+  // })
+  // .catch((err) => {
+  //   console.error(err);
+  // });
 
   module.exports = database;
